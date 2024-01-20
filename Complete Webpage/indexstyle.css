@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url(backg.jpeg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.contact {
+  width: 60px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  padding-left: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+}
+
+.navbar ul li a {
+  color: black;
+  line-height: 50px;
+  transition: .6s;
+}
+
+.navbar ul li a {
+  position: relative;
+  display: block;
+  width: 110px;
+  height: 50px;
+  border-radius: 60%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.navbar ul li:nth-child(1) a:hover {
+  background-color: #fe7e7f;
+}
+.navbar ul li:nth-child(2) a:hover {
+  background-color: #fe7e7f;
+}
+.navbar ul li:nth-child(3) a:hover {
+  background-color: #fe7e7f;
+}
+.navbar ul li:nth-child(4) a:hover {
+  background-color: #fe7e7f;
+}
+
+.textbox {
+  width: auto;
+  height: auto;
+  margin: 100px auto;
+  background: #F4C9CA;
+  position: relative;
+}
+
+.textbox h1, p {
+  margin-left: 2.5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.conent h1 {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: Montserrat;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  color: #0e082e;
+}
+
+.conent p {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: Montserrat;
+  color: #0e082e;
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(45deg, #F4C9CA, #FF6D70);
+  border-radius: 50px;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+
+.button p {
+  text-align: center;
+  display: inline-block;
+  font-size: 21px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.featureimage {
+  height: 75%;
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
+
+
+.footer ul {
+  position: absolute;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+}
+
+.footer ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.footer ul li .fab {
+  font-size: 20px;
+  line-height: 50px;
+  transition: .6s;
+  color: black;
+}
+
+.footer ul li .fab:hover {
+  color: #fff;
+}
+
+.footer ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.footer ul li a:hover {
+  transform: translate(0, -10px);
+}
+
+.footer ul li:nth-child(1) a:hover {
+  background-color: #3b5998;
+}
+
+.footer ul li:nth-child(2) a:hover {
+  background-color: #1da1f2;
+}
+
+.footer ul li:nth-child(3) a:hover {
+  background-color: #c32aa3;
+}
+
+.footer ul li:nth-child(4) a:hover {
+  background-color: #ff0000;
+}
+
+.loginbox {
+  width: 320px;
+  height: 420px;
+  background: #F4C9CA;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 50px);
+}
+
+.loginhead {
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: center;
+  font-size: 22px;
+  font-family: Montserrat;
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #0e082e;
+  background: transparent;
+  outline: none;
+  height; 40px;
+  color: #0e082e;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #0e082e;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  transition: .6s;
+}
+
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: #FE7F9C;
+  color: #000;
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: indigo;
+  transition: .5s;
+  font-family: Montserrat;
+}
+
+.loginbox a:hover {
+  color: #FE7F9C;
+}
+
+.contactform {
+  width: 85%;
+  max-width: 600px;
+  background: #F4C9CA;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Montserrat;
+  box-shadow: 0 0 20px #000000b3;
+}
+
+.contactform h1 {
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.txtb {
+  border: 1px solid gray;
+  margin: 8px 18px;
+  border-radius: 8px;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.txtb input, .txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.btn {
+  display: inline-block;
+  background:#0e082e;
+  transition: .5s;
+  padding: 14px 0;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  color: #FE7F9C;
+}

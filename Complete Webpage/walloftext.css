@@ -1,0 +1,28 @@
+.body
+{
+  margin: 0;
+} /* Create three equal columns that floats next to each other */
+.h {
+  text-align: center;
+  background-color: skyblue;
+}
+.columntop {
+  box-shadow: inset 2px 2px 2px pink;
+  float: left;
+  width: 32%;
+  padding: 10px;
+  height: 820px;
+     /* Should be removed. Only for demonstration */
+} /* Clear floats after the columns */
+.column{
+  box-shadow: inset 2px 2px 2px pink;
+  float: left;
+  width: 15%;
+  padding: 10px;
+  height: 900px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
